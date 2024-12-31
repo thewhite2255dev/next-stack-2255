@@ -10,7 +10,10 @@ export const metadata: Metadata = {
 export default function SettingsAppearancePage() {
   return (
     <div className="space-y-6">
-      <Header title="Appearance" label="Update your appearance settings." />
+      <Header
+        title="Appearance"
+        label="Customize the appearance of the app. Automatically switch between day and night themes."
+      />
       <AppearanceForm />
     </div>
   );

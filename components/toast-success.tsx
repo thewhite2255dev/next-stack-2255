@@ -14,7 +14,7 @@ export default function ToastSuccess({
 
   return (
     <div
-      className={cn("flex items-center space-x-3 text-success", className)}
+      className={cn("flex items-center space-x-2 text-success", className)}
       {...props}
     >
       <CircleCheck className="size-4" />

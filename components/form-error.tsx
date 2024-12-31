@@ -15,7 +15,7 @@ export default function FormError({
   return (
     <div
       className={cn(
-        "flex items-center space-x-3 rounded-md bg-destructive p-3 text-sm text-destructive-foreground",
+        "flex items-center space-x-2 rounded-md bg-destructive p-3 text-sm text-destructive-foreground",
         className,
       )}
       {...props}

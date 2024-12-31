@@ -13,7 +13,10 @@ export default async function SettingsProfilePage() {
 
   return (
     <div className="space-y-6">
-      <Header title="Profile" label="Update your account settings." />
+      <Header
+        title="Profile"
+        label="This is how others will see you on the site."
+      />
       <ProfileForm user={user} />
     </div>
   );

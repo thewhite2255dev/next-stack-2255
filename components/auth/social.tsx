@@ -30,7 +30,7 @@ export default function Social() {
         <Button
           key={item.name}
           size="lg"
-          className="w-full space-x-3"
+          className="w-full space-x-2"
           variant="outline"
           onClick={() => handleClick(item.provider)}
         >

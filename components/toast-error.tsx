@@ -14,7 +14,7 @@ export default function ToastError({
 
   return (
     <div
-      className={cn("flex items-center space-x-3 text-destructive", className)}
+      className={cn("flex items-center space-x-2 text-destructive", className)}
       {...props}
     >
       <TriangleAlert className="size-4" />

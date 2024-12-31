@@ -87,7 +87,7 @@ export default function ProfileForm({ user }: ProfileFormProps) {
           <FormLabel>Profile picture</FormLabel>
           <div className="mt-2 rounded-md border border-input px-3 py-2 shadow-sm">
             <div className="flex items-center justify-between">
-              <div className="flex items-center space-x-3 text-sm">
+              <div className="flex items-center space-x-2 text-sm">
                 <Avatar className="h-12 w-12 rounded-lg">
                   <AvatarImage
                     src={(user?.image as string) || undefined}
@@ -149,7 +149,7 @@ export default function ProfileForm({ user }: ProfileFormProps) {
               </FormControl>
               <FormDescription>
                 This is your public display name. It can be your real name or a
-                pseudonym. You can only change this once every 30 days.
+                pseudonym.
               </FormDescription>
               <FormMessage />
             </FormItem>
@@ -186,12 +186,7 @@ export default function ProfileForm({ user }: ProfileFormProps) {
           name="bio"
           render={({ field }) => (
             <FormItem>
-              <div className="flex items-center justify-between">
-                <FormLabel>Bio</FormLabel>
-                <FormDescription>
-                  {form.getValues("bio")?.length} / 160
-                </FormDescription>
-              </div>
+              <FormLabel>Bio</FormLabel>
               <FormControl>
                 <Textarea
                   className="resize-none"
@@ -202,10 +197,14 @@ export default function ProfileForm({ user }: ProfileFormProps) {
                   {...field}
                 />
               </FormControl>
-              <FormDescription>
-                You can <span>@mention</span> other users and organizations to
-                link to them.
-              </FormDescription>
+              <div className="flex items-center justify-between">
+                <FormDescription>
+                  Write a short bio to introduce yourself.
+                </FormDescription>
+                <FormDescription>
+                  {form.getValues("bio")?.length} / 160
+                </FormDescription>
+              </div>
               <FormMessage />
             </FormItem>
           )}

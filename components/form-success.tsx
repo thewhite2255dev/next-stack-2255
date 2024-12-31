@@ -15,7 +15,7 @@ export default function FormSuccess({
   return (
     <div
       className={cn(
-        "flex items-center space-x-3 rounded-md bg-success p-3 text-sm text-success-foreground",
+        "flex items-center space-x-2 rounded-md bg-success p-3 text-sm text-success-foreground",
         className,
       )}
       {...props}

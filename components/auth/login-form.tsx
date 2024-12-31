@@ -35,7 +35,7 @@ import { LoginSchema } from "@/schemas/auth.schema";
 export default function LoginForm() {
   const { update } = useSession();
   const searchParams = useSearchParams();
-  const callbackUrl = searchParams.get("callbackUrl") || undefined;
+  const callbackUrl = searchParams.get("callback_url") || undefined;
   const urlError =
     searchParams.get("error") === "OAuthAccountNotLinked"
       ? "Email already in use with different provider."

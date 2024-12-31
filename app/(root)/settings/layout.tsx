@@ -3,13 +3,13 @@
 import SettingsSidebar from "@/components/settings/settings-sidebar";
 import { Separator } from "@/components/ui/separator";
 import { ToastProvider } from "@/components/ui/toast";
-import { Settings, User, Lock, Paintbrush } from "lucide-react";
+import { Settings, Lock, Paintbrush, User2 } from "lucide-react";
 
 const settingsSidebarItems = [
   {
     label: "Profile",
     href: "/settings",
-    Icon: User,
+    Icon: User2,
   },
   {
     label: "Account",
